@@ -1,0 +1,5 @@
+---
+role_blog_docker_host_dir: '/var/lib/blog'
+role_blog_state: 'present'
+role_blog_port: '3017'
+...

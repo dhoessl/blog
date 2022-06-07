@@ -1,0 +1,11 @@
+---
+- name: 'import prepare_filesystem task'
+  import_tasks: 'prepare_filesystem.yaml'
+  tags:
+    - 'blog:filesystem'
+
+- name: 'import create_container task'
+  import_tasks: 'create_container.yaml'
+  tags:
+    - 'blog:docker'
+...
