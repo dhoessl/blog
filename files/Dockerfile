@@ -6,7 +6,7 @@ RUN apt update && apt install -y hugo git
 RUN cd /root && hugo new site blog && cd blog && git clone https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 
 # Copy Hugo config
-RUN rm config.toml
+RUN rm -rf config.toml
 COPY config.yaml ./
 
 # Run Hugo Server

@@ -33,7 +33,7 @@
 
 - name: 'copy hugo content'
   copy:
-    src: 'files/hugo'
+    src: 'files/hugo/'
     dest: '{{ role_blog_docker_host_dir }}/data/'
     owner: 'root'
     group: 'root'
