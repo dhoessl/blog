@@ -6,35 +6,23 @@
   loop:
     - 'docker'
     - 'data'
-    - 'data/content'
-    - 'data/archetypes'
-    - 'data/static'
+    - 'data/public'
   tags:
     - 'blog:filesystem'
 
-- name: 'copy Dockerfile to host'
-  copy:
-    src: 'files/Dockerfile'
-    dest: '{{ role_blog_docker_host_dir }}/docker/Dockerfile'
-    owner: 'root'
-    group: 'root'
-    mode: '0640'
-  tags:
-    - 'blog:filesystem'
-
-- name: 'copy hugo config'
-  copy:
-    src: 'files/config.yaml'
-    dest: '{{ role_blog_docker_host_dir }}/docker/config.yaml'
-    owner: 'root'
-    group: 'root'
-  tags:
-    - 'blog:filesystem'
+# - name: 'copy hugo config'
+#   copy:
+#     src: 'files/config.yaml'
+#     dest: '{{ role_blog_docker_host_dir }}/docker/config.yaml'
+#     owner: 'root'
+#     group: 'root'
+#   tags:
+#     - 'blog:filesystem'
 
 - name: 'copy hugo content'
   copy:
-    src: 'files/hugo/'
-    dest: '{{ role_blog_docker_host_dir }}/data/'
+    src: 'files/blog/public/'
+    dest: '{{ role_blog_docker_host_dir }}/data/public'
     owner: 'root'
     group: 'root'
   tags:

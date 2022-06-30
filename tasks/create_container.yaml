@@ -3,22 +3,31 @@
   docker_compose:
     pull: true
     project_name: 'blog'
-    state: '{{ role_blog_state | default(''present'') }}'
+    state: '{{ role_blog_state }}'
     definition:
       version: '3'
       networks:
         blog_net:
           external: false
       services:
+        # blog:
+        #   build: '{{ role_blog_docker_host_dir }}/docker'
+        #   restart: 'unless-stopped'
+        #   volumes:
+        #     - '{{ role_blog_docker_host_dir }}/data/content:/root/blog/content'
+        #     - '{{ role_blog_docker_host_dir }}/data/archetypes:/root/blog/archetypes'
+        #     - '{{ role_blog_docker_host_dir }}/data/static:/root/blog/static'
+        #   networks:
+        #     - 'blog_net'
+        #   ports:
+        #     - '{{ role_blog_port }}:1313'
         blog:
-          build: '{{ role_blog_docker_host_dir }}/docker'
+          image: 'nginx:latest'
           restart: 'unless-stopped'
           volumes:
-            - '{{ role_blog_docker_host_dir }}/data/content:/root/blog/content'
-            - '{{ role_blog_docker_host_dir }}/data/archetypes:/root/blog/archetypes'
-            - '{{ role_blog_docker_host_dir }}/data/static:/root/blog/static'
+            - '{{ role_blog_docker_host_dir }}/data/public:/usr/share/nginx/html:ro'
           networks:
             - 'blog_net'
           ports:
-            - '{{ role_blog_port }}:1313'
+            - '{{ role_blog_port }}:80'
 ...
