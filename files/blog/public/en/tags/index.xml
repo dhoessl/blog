@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on dhoessl.de</title>
+    <link>https://blog.dhoessl.de/en/tags/</link>
+    <description>Recent content in Tags on dhoessl.de</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 31 May 2022 17:00:07 +0200</lastBuildDate><atom:link href="https://blog.dhoessl.de/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>introduction</title>
+      <link>https://blog.dhoessl.de/en/tags/introduction/</link>
+      <pubDate>Tue, 31 May 2022 17:00:07 +0200</pubDate>
+      
+      <guid>https://blog.dhoessl.de/en/tags/introduction/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on dhoessl.de</title>
+    <link>https://blog.dhoessl.de/en/posts/</link>
+    <description>Recent content in Posts on dhoessl.de</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 31 May 2022 17:00:07 +0200</lastBuildDate><atom:link href="https://blog.dhoessl.de/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About this Blog</title>
+      <link>https://blog.dhoessl.de/en/posts/my-first-post/</link>
+      <pubDate>Tue, 31 May 2022 17:00:07 +0200</pubDate>
+      
+      <guid>https://blog.dhoessl.de/en/posts/my-first-post/</guid>
+      <description>What can you expect here As far as I feel like it, I will write an entry about topics I am working on. I will break down how I use technologies, how I use them and what mistakes I made, so that someone else doesn&amp;rsquo;t have to solve the same problems.
+What do I write about Basically, there should be something about the following topics:
+Python3 Ansible Microcontroller projects It is not excluded that I will also write about other topics that are on my mind.</description>
+    </item>
+    
+  </channel>
+</rss>
