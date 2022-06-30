@@ -4,20 +4,10 @@
     path: '{{ role_blog_docker_host_dir }}/{{ item }}'
     state: 'directory'
   loop:
-    - 'docker'
     - 'data'
     - 'data/public'
   tags:
     - 'blog:filesystem'
-
-# - name: 'copy hugo config'
-#   copy:
-#     src: 'files/config.yaml'
-#     dest: '{{ role_blog_docker_host_dir }}/docker/config.yaml'
-#     owner: 'root'
-#     group: 'root'
-#   tags:
-#     - 'blog:filesystem'
 
 - name: 'copy hugo content'
   copy:
